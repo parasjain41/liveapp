@@ -1,9 +1,12 @@
 import express from "express";
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Welcome To Ak tech");
-});
+
+app.use(express.static('../dist'))
+
+// app.get("/", (req, res) => {
+//   res.send("Welcome To Ak tech");
+// });
 
 const port = 4000;
 app.listen(port, () => {
