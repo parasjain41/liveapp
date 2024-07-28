@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "this is an testing app mode by Paras Jain",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
     
