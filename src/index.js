@@ -1,11 +1,11 @@
 import express from "express";
 const app = express();
 
+app.get("/", (req, res) => {
+  res.status(200).send("Hello");
+});
 
-app.get("/",(req,res)=>{
-    res.send("Hello");
-})
-
-app.listen(4000,()=>{
-    console.log(`server is start at port 4000`);
-})
+const port = 4000;
+app.listen(port, () => {
+  console.log(`server is start at port ${port}`);
+});
